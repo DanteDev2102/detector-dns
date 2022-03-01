@@ -29,14 +29,15 @@ def main(domain,type):
                 print( query )
     except:
         print('no se pudo encontrar la dns')
-        if _name_ == '_name_':
+        if __name__ == '__name__':
             try:
                 main( domain, type )
             except KeyboardInterrupt:
                 exit( 1 )
 
-
+print(_name_)
 domain = input('Enter to domain: ')
 type = input('Enter type query: ')
 
 main(domain,type)
+
